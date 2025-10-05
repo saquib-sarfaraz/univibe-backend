@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,14 +11,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
+    "dotenv": "^16.3.1",
     "express": "^5.1.0",
     "getstream": "^8.8.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.0",
+    "mongoose": "^8.1.9",
     "nodemon": "^3.1.10",
     "socket.io": "^4.8.1"
   }

@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",  
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "cd src && node app.js", 
     "dev": "nodemon src/app.js",
     "prod": "pm2 src/app.js"
   },

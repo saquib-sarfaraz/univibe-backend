@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "cd src && node app.js", 
+    "start": "cd src && node app.js",
     "dev": "nodemon src/app.js",
     "prod": "pm2 src/app.js"
   },
@@ -13,11 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
     "getstream": "^8.8.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.1.9",
+    "mongoose": "^8.19.0",
     "nodemon": "^3.1.10",
     "socket.io": "^4.8.1"
   }

@@ -8,16 +8,19 @@ import UserRoutes from './routes/userRoutes.js';
 import PostRoutes from './routes/postRoutes.js';
 import StoryRoutes from './routes/storyRoutes.js';
 
+
 dotenv.config();
 
 const app = express();
 const server = createServer(app);
+const router = express.Router();
 const io = new Server(server, {
   cors: {
     origin: process.env.FRONTEND_URL,
     methods: ["GET", "POST", "PUT", "DELETE"],
    credentials: true
   }
+  
 });
 
 
@@ -49,5 +52,9 @@ const start = async () => {
   });
 }
 
+router.get('/', (req, res) => {
+  res.json({ message: "User route is working!" });
+});
+export default router;
 start();
 
